@@ -8,7 +8,7 @@ async function validate(dayNum) {
     const days = await fs.readdir('./src')
 
     const hasDay = days.find(d => d === `day-${dayNum}.js`)
-    const hasInput = inputs.find(i => i === `input-${dayNum}-${dayNum}`)
+    const hasInput = inputs.find(i => i === `input-${dayNum}-1`)
 
     if (!hasDay) {
 	console.error(`Unable to find day=${dayNum}`)
