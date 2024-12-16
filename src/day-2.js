@@ -71,10 +71,7 @@ function isReportSafe(report) {
 		isSafeByTrajectory = false
 	    }
 	}
-
-
     }
 
     return isSafeByNumbers && isSafeByTrajectory
-    
 }
